@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+ <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research — Dr. Your Name</title>
-  <meta name="description" content="Peer-reviewed publications, preprints, and talks by Dr. Your Name." />
-  <meta property="og:title" content="Research — Dr. Your Name" />
-  <meta property="og:description" content="Peer-reviewed publications, preprints, and talks by Dr. Your Name." />
-  <meta property="og:type" content="website" />
+  <title>Inez Derkx, PhD </title>
+  <meta name="description" content="Academic website of Inez Derkx, PhD" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    /* Year subheading */
+    .pub-year-heading {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-style: italic;
+      color: var(--brand);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    /* Section heading (Peer-Reviewed / Manuscripts) */
+    .pub-section-heading {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 3.5rem 0 0.25rem;
+    }
+    .pub-section-heading:first-of-type { margin-top: 0; }
+
+    /* Sub-section heading (Under Review / In Preparation) */
+    .pub-subsection-heading {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 2rem 0 0.75rem;
+    }
+
+    /* Remove the inline year pill for items under year headings */
+    .pub-list .pub-year { display: none; }
+  </style>
 </head>
 <body>
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand">Dr. Your Name</a>
+    <a href="index.html" class="brand">Dr. Inez Derkx</a>
     <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
+      <li><a href="research.html">Publications</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="tools.html">Tools</a></li>
       <li><a href="contact.html" class="btn-contact">Contact</a></li>
@@ -29,74 +63,152 @@
 </nav>
 <header class="page-header">
   <div class="container">
-    <div class="eyebrow">Research</div>
+    <div class="eyebrow">Publications</div>
     <h1>Publications</h1>
-    <p>A complete list of peer-reviewed publications, preprints, and book chapters. Also available on <a href="https://scholar.google.com" style="color:var(--brand)">Google Scholar</a>.</p>
   </div>
 </header>
 <main>
   <section>
     <div class="container">
+
+      <!-- ===== PEER-REVIEWED PUBLICATIONS ===== -->
+      <h2 class="pub-section-heading">Peer-Reviewed Publications</h2>
+
+      <h3 class="pub-year-heading">2026</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-year">2026</div>
+          <div>
+            <h3 class="pub-title">Inbreeding avoidance in the Raute hunter–gatherers from Nepal</h3>
+            <p class="pub-authors">I Derkx, G Menn, B Dobon, S Subedi, P Rajbhandari, A Gyawali, M Dyble, et al.</p>
+            <p class="pub-venue">Proceedings of the Royal Society B: Biological Sciences, 293(2069).</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-year">2026</div>
+          <div>
+            <h3 class="pub-title">Bitter Taste Perception in BaYaka Hunter‐Gatherers</h3>
+            <p class="pub-authors">S Keestra, I Derkx, ES Miabangana, G Sikka, N Chaudhary, GD Salali</p>
+            <p class="pub-venue">American Journal of Human Biology, 38(2), e70218.</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="pub-year-heading">2025</h3>
       <ul class="pub-list">
         <li class="pub-item">
           <div class="pub-year">2025</div>
           <div>
-            <h3 class="pub-title">Title of recent paper goes here</h3>
-            <p class="pub-authors">Your Name, Co-author A, Co-author B</p>
-            <p class="pub-venue">Journal of Important Research, 42(3), 100&ndash;120.</p>
-            <div class="pub-links">
-              <a href="#">PDF</a>
-              <a href="#">DOI</a>
-              <a href="#">Code</a>
-              <a href="#">BibTeX</a>
-            </div>
+            <h3 class="pub-title">The genetic demographic history of the last hunter-gatherer population of the Himalayas</h3>
+            <p class="pub-authors">I Derkx, F Ceballos, SA Biagini, S Subedi, P Rajbhandari, A Gyawali, et al.</p>
+            <p class="pub-venue">Scientific Reports, 15(1), 1505.</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="pub-year-heading">2024</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-year">2024</div>
+          <div>
+            <h3 class="pub-title">Women's subsistence strategies predict fertility across cultures, but context matters</h3>
+            <p class="pub-authors">AE Page, EJ Ringen, J Koster, M Borgerhoff Mulder, K Kramer, MK Shenk, et al.</p>
+            <p class="pub-venue">Proceedings of the National Academy of Sciences, 121(9), e2318181121.</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
           </div>
         </li>
         <li class="pub-item">
           <div class="pub-year">2024</div>
           <div>
-            <h3 class="pub-title">Another publication title</h3>
-            <p class="pub-authors">Your Name, Co-author C</p>
-            <p class="pub-venue">Proceedings of [Conference], pp. 50&ndash;65.</p>
-            <div class="pub-links">
-              <a href="#">PDF</a>
-              <a href="#">DOI</a>
-            </div>
+            <h3 class="pub-title">Hunter–gatherer genetics research: Importance and avenues</h3>
+            <p class="pub-authors">C Padilla-Iglesias, I Derkx</p>
+            <p class="pub-venue">Evolutionary Human Sciences, 6, e15.</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
           </div>
         </li>
         <li class="pub-item">
-          <div class="pub-year">2023</div>
+          <div class="pub-year">2024</div>
           <div>
-            <h3 class="pub-title">An earlier influential paper</h3>
-            <p class="pub-authors">Co-author D, Your Name, Co-author E</p>
-            <p class="pub-venue">Nature Something, 615, 200&ndash;215.</p>
-            <div class="pub-links">
-              <a href="#">PDF</a>
-              <a href="#">DOI</a>
-              <a href="#">Data</a>
-            </div>
-          </div>
-        </li>
-        <li class="pub-item">
-          <div class="pub-year">2022</div>
-          <div>
-            <h3 class="pub-title">Foundational work in the field</h3>
-            <p class="pub-authors">Your Name</p>
-            <p class="pub-venue">PhD Thesis, University Name.</p>
-            <div class="pub-links">
-              <a href="#">PDF</a>
-            </div>
+            <h3 class="pub-title">Alcohol consumption, life history and extinction risk among Raute hunter–gatherers from Nepal</h3>
+            <p class="pub-authors">I Derkx, G Menn, S Subedi, N Upadhyaya, P Rajbhandari, A Gyawali, et al.</p>
+            <p class="pub-venue">Evolutionary Human Sciences, 6, e45.</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
           </div>
         </li>
       </ul>
+
+      <h3 class="pub-year-heading">2021</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-year">2021</div>
+          <div>
+            <h3 class="pub-title">Quantifying patterns of alcohol consumption and its effects on health and wellbeing among BaYaka hunter-gatherers: A mixed-methods cross-sectional study</h3>
+            <p class="pub-authors">JK Knight, GD Salali, G Sikka, I Derkx, SM Keestra, N Chaudhary</p>
+            <p class="pub-venue">PLOS ONE, 16(10), e0258384.</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="pub-year-heading">2020</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-year">2020</div>
+          <div>
+            <h3 class="pub-title">Global WEIRDing: transitions in wild plant knowledge and treatment preferences in Congo hunter–gatherers</h3>
+            <p class="pub-authors">GD Salali, M Dyble, N Chaudhary, G Sikka, I Derkx, SM Keestra, D Smith, et al.</p>
+            <p class="pub-venue">Evolutionary Human Sciences, 2, e24.</p>
+            <div class="pub-links"><a href="#">DOI</a></div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- ===== MANUSCRIPTS ===== -->
+      <h2 class="pub-section-heading">Manuscripts</h2>
+
+      <h3 class="pub-subsection-heading">Under Review</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-year"></div>
+          <div>
+            <h3 class="pub-title">Scientific and ethical concerns with reporting prevalences of behavioral symptoms and psychiatric disorders in Hadza children: A commentary on Ougrin et al. 2023</h3>
+            <p class="pub-authors">C Scaff, J Martin, A Hunt, N Chaudhary, I Derkx, C van den Driessche, T Katiyar, E Ready, GD Salali, M Singh, AG Thalmayer, DNE Stibbard-Hawkes, IJ Wallace, AV Jaeggi</p>
+            <p class="pub-venue"><em>Under review.</em></p>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="pub-subsection-heading">In Preparation</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-year"></div>
+          <div>
+            <h3 class="pub-title">Meal timings, dietary transition and glycaemic health among the BaYaka hunter-gatherers in the Congo Basin</h3>
+            <p class="pub-authors">S Keestra, I Derkx, ES Miabangana, S Mortimore, N Chaudhary, A Seal, G Sikka, JC Wells, GD Salali</p>
+            <p class="pub-venue"><em>In preparation.</em></p>
+          </div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-year"></div>
+          <div>
+            <h3 class="pub-title">Contact heterogeneity in network reconstruction: evaluating synthetic graph generators for rabies transmission modeling</h3>
+            <p class="pub-authors">I Derkx, M Hyman, […], N Chitnis</p>
+            <p class="pub-venue"><em>In preparation.</em></p>
+          </div>
+        </li>
+      </ul>
+
     </div>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer-small">
   <div class="container">
-    <p>&copy; 2026 Your Name &middot;
+    <p>&copy; 2026 Inez Derkx &middot;
       <a href="https://github.com/yourusername">GitHub</a> &middot;
-      <a href="https://scholar.google.com">Google Scholar</a> &middot;
+      <a href="https://scholar.google.com/citations?user=6Ky3RsQAAAAJ&hl=en">Google Scholar</a> &middot;
       <a href="https://orcid.org">ORCID</a>
     </p>
   </div>
