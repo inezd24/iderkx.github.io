@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Dr. Your Name</title>
-  <meta name="description" content="Background, education, and CV of Dr. Your Name." />
-  <meta property="og:title" content="About — Dr. Your Name" />
-  <meta property="og:description" content="Background, education, and CV of Dr. Your Name." />
+  <title>About — Inez Derkx, PhD</title>
+  <meta name="description" content="Background, education, and CV of Inez Derkx." />
+  <meta property="og:title" content="About" />
+  <meta property="og:description" content="About" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,39 +14,41 @@
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand">Dr. Your Name</a>
+    <a href="index.html" class="brand">Inez Derkx, PhD</a>
     <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
+      <li><a href="research.html">Publications</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="tools.html">Tools</a></li>
       <li><a href="contact.html" class="btn-contact">Contact</a></li>
     </ul>
   </div>
 </nav>
-<header class="page-header">
-  <div class="container">
-    <div class="eyebrow">About</div>
-    <h1>About me</h1>
-    <p>A short tagline describing who you are and what drives your research.</p>
-  </div>
-</header>
-<main>
+
+<main style="padding-top: 4rem;">
   <section>
     <div class="container about-grid">
+      
+      <!-- Left Column: Photo & Direct Links -->
       <div class="about-photo">
-        <img src="https://picsum.photos/seed/about/600/600" alt="Your Name" />
+        <img src="https://picsum.photos/seed/about/600/600" alt="Inez Derkx" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;" />
+        <div class="quick-links" style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <a href="YOUR_GOOGLE_DRIVE_CV_LINK_HERE" target="_blank" class="btn-cv" style="text-align: center; display: block; padding: 0.5rem; background: #efefef; border-radius: 4px; text-decoration: none; color: #333; font-weight: 500;">&darr; View CV (Google Drive)</a>
+          <a href="https://github.com/yourusername" target="_blank" class="btn-github" style="text-align: center; display: block; padding: 0.5rem; background: #333; border-radius: 4px; text-decoration: none; color: #fff; font-weight: 500;">Visit my GitHub</a>
+        </div>
       </div>
+      
+      <!-- Right Column: Text Content -->
       <div class="prose">
-        <p>I'm <strong>Dr. Your Name</strong>, a [position] at [institution]. My research investigates [broad area] using methods from [methods]. I'm particularly interested in [specific question].</p>
+        <h1>Inez Derkx, PhD</h1>
+        <p>A short tagline describing who you are and what drives your research.</p>
+        
+        <p>I'm <strong>Inez Derkx</strong>, a [position] at [institution]. My research investigates [broad area] using methods from [methods]. I'm particularly interested in [specific question].</p>
         <p>Before joining [current institution], I completed my PhD at [university] under the supervision of [advisor], and held postdoctoral positions at [places].</p>
-
-        <h2>Curriculum Vitae</h2>
-        <p>A detailed CV with full publications, talks, teaching, and service is available below.</p>
-        <p><a href="cv.pdf" download>&darr; Download CV (PDF)</a></p>
 
         <h2>Education</h2>
         <ul>
@@ -64,18 +66,17 @@
         <h2>Interests</h2>
         <p>Outside the lab, I enjoy [hobby], [hobby], and [hobby].</p>
       </div>
+
     </div>
   </section>
 </main>
-<footer class="footer">
+
+<footer class="footer-small">
   <div class="container">
-    <p>&copy; 2026 Your Name &middot;
-      <a href="https://github.com/yourusername">GitHub</a> &middot;
-      <a href="https://scholar.google.com">Google Scholar</a> &middot;
-      <a href="https://orcid.org">ORCID</a>
-    </p>
+    <p>Copyright &copy; 2026 Inez Derkx | All Rights Reserved</p>
   </div>
 </footer>
+
 <script src="assets/main.js"></script>
 </body>
 </html>
