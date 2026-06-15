@@ -1,26 +1,29 @@
-/* --- UPDATED CSS: Academic site with New Hero & Small Footer --- */
+/* --- UPDATED CSS: Academic site with Quinn-inspired palette & fonts --- */
+
+/* Import fonts: Cormorant Garamond (script-y serif for hero title) + DM Sans (clean sans for everything else) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap');
 
 :root {
-  /* Matching the purple accent from reference */
-  --brand: oklch(50% 0.3 280); 
-  --brand-soft: oklch(50% 0.3 280 / 0.1);
-  --brand-hover: oklch(45% 0.3 280);
-  
-  --bg: #ffffff;
-  --surface: oklch(97% 0.01 250);
-  --border: oklch(92% 0.02 250);
-  --text: oklch(15% 0.02 250);
-  --text-muted: oklch(40% 0.02 250);
-  
+  /* Quinn-inspired warm neutral palette */
+  --brand: #C17A4A;              /* warm terracotta/amber accent */
+  --brand-soft: rgba(193,122,74,0.1);
+  --brand-hover: #A3622E;        /* darker terracotta on hover */
+
+  --bg: #FAF8F5;                 /* warm off-white, not stark white */
+  --surface: #F2EDE7;            /* warm cream for card surfaces */
+  --border: #E6DDD3;             /* warm greige border */
+  --text: #1C1814;               /* deep warm charcoal */
+  --text-muted: #7A6E65;         /* warm mid-tone for secondary text */
+
   --radius: 12px;
-  --max-w: 1100px; /* slightly narrower for the compact look */
+  --max-w: 1100px;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: 'Lexend', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, sans-serif;
   font-weight: 300;
   color: var(--text);
   background: var(--bg);
@@ -32,10 +35,10 @@ img { max-width: 100%; display: block; }
 
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
 
-/* --- Nav (remains the same) --- */
+/* --- Nav --- */
 .nav {
   position: sticky; top: 0; z-index: 40;
-  background: rgba(255,255,255,0.9);
+  background: rgba(250,248,245,0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -51,10 +54,10 @@ img { max-width: 100%; display: block; }
   padding: 0.4rem 0.9rem; border: 1px solid var(--brand); color: var(--brand);
   border-radius: 99px; font-weight: 500; font-size: 0.85rem;
 }
-.btn-contact:hover { background: var(--brand); color: white; }
+.btn-contact:hover { background: var(--brand); color: var(--bg); }
 .nav-toggle { display: none; }
 
-/* --- HERO REDESIGN SECTION --- */
+/* --- HERO SECTION --- */
 .hero { padding: 8rem 0; min-height: 80vh; display: flex; align-items: center; }
 
 /* 3-column wrapper: Social | Text | Image */
@@ -74,7 +77,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-social-icon {
   color: var(--brand);
-  font-size: 1.5rem; /* size of icons */
+  font-size: 1.5rem;
   opacity: 0.8;
 }
 .hero-social-icon:hover {
@@ -84,7 +87,7 @@ img { max-width: 100%; display: block; }
 
 /* 2. The Inner Grid (Text + Image) */
 .hero-grid-redesign {
-  grid-column: 2 / -1; /* spans text and image columns */
+  grid-column: 2 / -1;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 3rem;
@@ -94,29 +97,40 @@ img { max-width: 100%; display: block; }
 /* Text Content styling */
 .hero-text-content { max-width: 32rem; }
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 700; line-height: 1.1; letter-spacing: -0.02em;
+  /* Cormorant Garamond is the star: elegant, editorial, script-adjacent */
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 600;
+  font-style: italic;            /* italic activates Cormorant's calligraphic quality */
+  line-height: 1.05;
+  letter-spacing: -0.01em;
   margin: 0 0 0.25rem;
+  color: var(--text);
 }
 .hero-subtitle {
-  font-size: 1.3rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 1.1rem;
   color: var(--text-muted);
   font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   margin: 0 0 1.5rem;
 }
 .hero-description {
+  font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 1rem;
   color: var(--text-muted);
   margin: 0 0 2.5rem;
   font-weight: 300;
 }
 
-/* Contact Button matching reference */
+/* Contact Button */
 .btn-primary-redesign {
   padding: 0.8rem 1.5rem;
   background: var(--brand);
-  color: white;
+  color: var(--bg);
   border-radius: var(--radius);
+  font-family: 'DM Sans', system-ui, sans-serif;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -127,31 +141,31 @@ img { max-width: 100%; display: block; }
 /* 3. Image Blob container */
 .hero-img-blob-container {
   aspect-ratio: 1;
-  background: var(--brand); /* The color surrounding the portrait */
-  
-  /* THIS CREATES THE BLOB SHAPE (matching reference) */
+  background: var(--brand);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  
   overflow: hidden;
-  box-shadow: 0 10px 30px oklch(50% 0.3 280 / 0.1);
+  box-shadow: 0 10px 30px rgba(193,122,74,0.15);
 }
 
-.hero-img-blob-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Scales the portrait inside the blob */
-  transform: scale(1.1); 
+.hero-img-blob-container {
+  aspect-ratio: 1;
+  background: var(--brand);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(193,122,74,0.15);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-/* --- FOOTER (SIGNIFICANTLY SMALLER) --- */
+/* --- FOOTER --- */
 .footer-small {
   border-top: 1px solid var(--border);
-  padding: 1rem 0; /* Minimal vertical padding */
+  padding: 1rem 0;
   text-align: center;
   color: var(--text-muted);
-  font-size: 0.8rem; /* Smaller font */
-  margin-top: auto; /* Pushes footer down if content is short */
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.8rem;
+  margin-top: auto;
 }
 .footer-small p { margin: 0; }
 
@@ -164,7 +178,7 @@ img { max-width: 100%; display: block; }
     text-align: center;
   }
   .hero-social {
-    grid-row: 2; /* moves icons below title on mobile */
+    grid-row: 2;
     flex-direction: row;
     justify-content: center;
   }
