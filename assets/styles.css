@@ -145,7 +145,6 @@ img { max-width: 100%; display: block; }
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(193,122,74,0.15);
-  max-width: 90%;
   margin: 0 auto;
 }
 
